@@ -1,0 +1,7 @@
+.menu {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    padding: 0.1em 10em;
+    background-color: var(--preto-cinema);
+}

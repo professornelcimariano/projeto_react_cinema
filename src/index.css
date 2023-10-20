@@ -3,6 +3,8 @@
   --branco: #FFFFFF;
   --preto: #000000;
   --cinza: #E2E2E2;
+  --vermelho-cinema:#e41a1a;
+  --preto-cinema: #222;
 }
 
 body {
@@ -17,3 +19,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+

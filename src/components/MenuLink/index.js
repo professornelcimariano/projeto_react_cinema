@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import styles from './CabecalhoLink.module.css';
+import styles from './MenuLink.module.css';
 
-function CabecalhoLink({ url, children }) {
+function MenuLink({ url, children }) {
     return (
         <Link to={url} className={styles.link}>
             {children}
@@ -9,4 +9,4 @@ function CabecalhoLink({ url, children }) {
     )
 }
 
-export default CabecalhoLink;
+export default MenuLink;
