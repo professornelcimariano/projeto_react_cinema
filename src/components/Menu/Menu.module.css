@@ -2,6 +2,24 @@
     display: flex;
     justify-content: right;
     align-items: flex-start;
-    padding: 0.1em 10em;
+    padding: 0.1em 1em;
     background-color: var(--preto-cinema);
 }
+
+.logo {
+    flex: 1;
+    color: var(--branco);   
+    padding: 1em;
+}
+.links {
+    flex: 4;
+}
+
+@media (min-width: 992px) {
+    .menu {
+        padding: 0.1em 10em;
+    }
+    .logo {
+        padding: 1.5em;
+    }
+  }

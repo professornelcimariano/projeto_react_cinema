@@ -12,6 +12,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Menu() {
     return (
         <header className={styles.menu}>
+            <div className={styles.logo} >
+                Cinema
+            </div>
             {/* <Link to="./">
                 <img src={logo} alt="Logo do cinetag"></img>
             </Link>
@@ -29,11 +32,12 @@ function Menu() {
                     Contato
                 </MenuLink>
             </nav> */}
-            <Navbar expand="lg">
-                {/* <Container> */}
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor: '#999', align: 'left'}} />
-                    <Navbar.Collapse id="basic-navbar-nav" >
-                        <Nav className="me-auto">
+            <div className={styles.links}>
+                <Navbar expand="lg" style={{ justifyContent: 'flex-end', textAlign: 'left', width: '100%' }}>
+                    {/* <Container> */}
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: '#999' }} />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto" >
                             <MenuLink url="./">
                                 Home
                             </MenuLink>
@@ -48,8 +52,9 @@ function Menu() {
                             </MenuLink>
                         </Nav>
                     </Navbar.Collapse>
-                {/* </Container> */}
-            </Navbar>
+                    {/* </Container> */}
+                </Navbar>
+            </div>
         </header>
     )
 }
