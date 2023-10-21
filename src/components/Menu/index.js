@@ -12,29 +12,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Menu() {
     return (
         <header className={styles.menu}>
-            <div className={styles.logo} >
-                Cinema
-            </div>
-            {/* <Link to="./">
-                <img src={logo} alt="Logo do cinetag"></img>
-            </Link>
-            <nav>
-                <MenuLink url="./">
-                    Home
-                </MenuLink>
-                <MenuLink url="./Favoritos">
-                    Favoritos
-                </MenuLink>
-                <MenuLink url="./Lancamentos">
-                    Lancamentos
-                </MenuLink>
-                <MenuLink url="./Contato">
-                    Contato
-                </MenuLink>
-            </nav> */}
             <div className={styles.links}>
-                <Navbar expand="lg" style={{ justifyContent: 'flex-end', textAlign: 'left', width: '100%' }}>
-                    {/* <Container> */}
+                <Navbar expand="lg" >
+                    <div className={styles.logo} >
+                        Cinema
+                    </div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: '#999' }} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto" >
@@ -52,7 +34,6 @@ function Menu() {
                             </MenuLink>
                         </Nav>
                     </Navbar.Collapse>
-                    {/* </Container> */}
                 </Navbar>
             </div>
         </header>
@@ -60,4 +41,23 @@ function Menu() {
 }
 
 export default Menu;
+
+
+{/* <Link to="./">
+                <img src={logo} alt="Logo do cinetag"></img>
+            </Link>
+            <nav>
+                <MenuLink url="./">
+                    Home
+                </MenuLink>
+                <MenuLink url="./Favoritos">
+                    Favoritos
+                </MenuLink>
+                <MenuLink url="./Lancamentos">
+                    Lancamentos
+                </MenuLink>
+                <MenuLink url="./Contato">
+                    Contato
+                </MenuLink>
+            </nav> */}
 
