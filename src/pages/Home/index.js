@@ -1,21 +1,23 @@
 import Banner from "components/Banner";
 import Titulo from "components/Titulo";
-import Lancamentos from "components/Lancamentos";
+import CardsF from "components/CardsF";
+import ImagesF from "components/ImagesF";
+import Col2F from "components/Col2F";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
+
 
 
 
 function Home() {
     return (
         <>
-            <Banner imagem="banner-1" />
-            <Container>
+            <Banner imagem="banner-1" />            
                 <Titulo>
-                    Lançamentos de Filmes
+                    Últimos Lançamentos
                 </Titulo>
-                <Lancamentos />
-            </Container>
+                <CardsF />
+                <ImagesF />
+                <Col2F />
         </>
     )
 }

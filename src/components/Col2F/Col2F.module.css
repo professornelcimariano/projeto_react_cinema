@@ -1,0 +1,59 @@
+.col2f {
+    position: relative;
+    background-color: var(--branco);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.col2f::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Cor escura com opacidade (alpha) de 0.5 para o filtro escuro */
+  }
+
+.col2f .bx {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: brightness(1); /* Filtro para escurecer a imagem*/
+}
+
+.col2f h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: var(--branco);
+}
+
+.col2f p {
+    z-index: 1;
+    text-align: justify;
+    color: var(--branco);
+}
+
+.col2f figure {
+    height: 300px;
+    display: initial;
+    overflow: hidden;
+}
+
+.col2f figure img {
+    object-fit: cover; /* Dimensionar a imagem dentro do box*/
+    transition: filter 0.3s; /* Adiciona uma transição suave para a mudança de filtro */
+    width: 100%;
+    height: 100%;
+}
+
+.col2f figure img:hover {
+    filter: brightness(1); /* Filtro para escurecer a imagem*/
+}
