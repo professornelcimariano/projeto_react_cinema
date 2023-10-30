@@ -6,3 +6,32 @@
     background-position: center center;
     background-attachment: fixed;
 }
+
+.capa h1 {
+    color: var(--branco);
+}
+
+.capa p {
+    color: var(--branco);
+    
+}
+
+.capa::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Cor escura com opacidade para o filtro escuro, porém está zerado */
+  }
+  /* bx - Class Filtro para clarear o container em cima do before que está escuro */
+  .capa .bx {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor escura com opacidade (alpha) de 0.5 para o filtro escuro */
+    margin-top: 10%;
+    padding: 20px;
+  }

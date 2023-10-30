@@ -15,13 +15,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Cor escura com opacidade (alpha) de 0.5 para o filtro escuro */
   }
-
+ /* bx - Class Filtro para clarear o container em cima do before que está escuro */
 .col2f .bx {
     z-index: 999;
     position: relative;
     width: 100%;
     height: 100%;
-    filter: brightness(1); /* Filtro para escurecer a imagem*/
+    filter: brightness(1); /* Filtro para clarear o container em cima do before que está escuro*/
 }
 
 .col2f h2 {
