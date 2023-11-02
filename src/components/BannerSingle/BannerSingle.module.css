@@ -1,0 +1,49 @@
+.bannersingle {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bannersingle h1 {
+    color: var(--branco);
+    /* text-align: center; */
+}
+
+.bannersingle p {
+    color: var(--branco);
+    
+}
+
+.bannersingle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+  /* bx - Class Filtro para clarear o container em cima do before que está escuro */
+  .bannersingle .bx {
+    z-index: 999;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    margin-top: 30%;
+    /* padding: 20px; */
+  }
+
+  .bannersingle h1 {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  @media (min-width: 767px) {
+    .bannersingle .bx { 
+      margin-top: 15%;
+    }
+  }

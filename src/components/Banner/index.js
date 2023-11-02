@@ -9,15 +9,17 @@ function Banner({ imagem }) {
     return (
         <div className={styles.capa}
             style={{ backgroundImage: `url('/images/${imagem}.png')` }}>
-            <section className={styles.accordionf} >
+            <section>
                 <Container>
                     <Row>
-                        <Col xs={12} md={12} className="mb-3">
+                        <Col xs={12} md={6} className="mb-3">
                             <div className={styles.bx}>
                                 <h1>Avengers: Endgame</h1>
                                 <p><b>Rating 9.6 <br /> Time 2h 50 min </b></p>
                                 <p>
                                     Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                                </p>
+                                <p>
                                     Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
                                 </p>
                                 <Button variant="danger">Assistir Agora :)</Button>{' '}

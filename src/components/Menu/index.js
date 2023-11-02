@@ -23,14 +23,11 @@ function Menu() {
                             <MenuLink url="./">
                                 Home
                             </MenuLink>
-                            <MenuLink url="./Favoritos">
-                                Favoritos
-                            </MenuLink>
                             <MenuLink url="./Lancamentos">
                                 Lancamentos
                             </MenuLink>
-                            <MenuLink url="./Contato">
-                                Contato
+                            <MenuLink url="./MinhaConta">
+                                Minha Conta
                             </MenuLink>
                         </Nav>
                     </Navbar.Collapse>
